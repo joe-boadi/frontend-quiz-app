@@ -14,8 +14,6 @@ function QuizCompleted({ score, img, title }: props) {
   const [play, setplay] = useState(true);
   return (
     <div>
-       
-
        {
         play?<div>
         <div className="re-position">
@@ -41,7 +39,6 @@ function QuizCompleted({ score, img, title }: props) {
                   {score}
                 </h1>
               </div>
-
               <p>out of 10</p>
             </div>
 
@@ -56,7 +53,6 @@ function QuizCompleted({ score, img, title }: props) {
                 localStorage.setItem("score", JSON.stringify(0));
                 setplay(false)
               }}
-              
             />
           </div>
         </div>
@@ -65,5 +61,4 @@ function QuizCompleted({ score, img, title }: props) {
     </div>
   );
 }
-
 export default QuizCompleted;
