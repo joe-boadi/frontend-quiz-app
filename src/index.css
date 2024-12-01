@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 :root{
   --bg:#F4F6FA;
   --bg-items:#FFFFFF;
@@ -34,7 +33,6 @@ ul li {
   box-shadow: var(--shadow);
 }
 
-
 body{
   background: var(--bg);
   background-image: var(--desktop);
@@ -42,8 +40,6 @@ body{
   background-size: cover;
   height: 100vh;
 }
-
-
 
 @media (max-width:768px) {
   body{
@@ -53,8 +49,6 @@ body{
   
 }
 
-
-
 @media (max-width:450px) {
   body{
       background: var(--bg);
@@ -63,23 +57,15 @@ body{
   
 }
 
-
-
 .container{
   padding: 10px;
   background:var(--bg-items);
-
   color: var(--color);
- 
-  
 }
 
 ul li {
   background: var(--bg-items);
-  
 }
-
-
 
 ul li  p,.left h5,.left h6{
   color: var(--color);
