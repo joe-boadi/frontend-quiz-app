@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-  const usePersistedState = (key:string,value:unknown) => {
+  const usePersistedState = (key:string, value:unknown) => {
     const [state, setState] = useState(() => {
       const storedValue = localStorage.getItem(key);
       return storedValue ? JSON.parse(storedValue) : value;
@@ -12,7 +12,4 @@ import { useEffect, useState } from "react";
   
     return [state, setState] as const;
   }
-
-
-
 export  {usePersistedState};
